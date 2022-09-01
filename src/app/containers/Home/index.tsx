@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import HeaderMain from "../../components/HeaderMain";
 import SaintsCarousel from "../../components/SaintsCarousel";
+import { MakeALot } from "../../components/MakeALot";
 
 const Home: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
       <Navbar />
       <HeaderMain />
       <SaintsCarousel />
+      <MakeALot />
     </>
   );
 };

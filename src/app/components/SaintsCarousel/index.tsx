@@ -107,7 +107,7 @@ const SaintsCarousel: React.FC = () => {
             }}
             loop={true}
             breakpoints={breakpoints}
-            onSlideChange={() => console.log('slide change')}
+            onSlideChange={() => {}}
             onSwiper={(swiper) => console.log(swiper)}
             navigation={true}
             modules={[Autoplay, Navigation]}

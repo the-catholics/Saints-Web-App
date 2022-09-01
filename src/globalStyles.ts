@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--background);
   }
 
-  h1, h2, h3, h4, h5, h6, p, a, li, span {
+  h1, h2, h3, h4, h5, h6, p, a, li, span, i {
     color: var(--text);
     font-family: 'Poppins', sans-serif;
   }
@@ -48,8 +48,14 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     font-weight: 500;
   }
+  p {
+    margin-bottom: 8px;
+  }
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+  }
+  strong {
+    color: var(--primary);
   }
 
   a {
