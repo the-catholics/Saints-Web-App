@@ -2,8 +2,7 @@ import { Navbar } from "react-bootstrap";
 import styled from "styled-components";
 
 export const Navigation = styled(Navbar)`
-  background-color: var(--background);
-  border-radius: 0 0 var(--br) var(--br);
+  background-color: var(--background-ts);
   padding: 16px 0;
   transition: var(--ts);
   
@@ -37,10 +36,12 @@ export const Navigation = styled(Navbar)`
         color: var(--text);
         padding: 8px 16px;
         text-align: center;
-        border-radius: var(--br);
+        border-bottom: 3px solid transparent;
         &:hover {
-          background: var(--background-hover);
-          color: var(--text-alt);
+          border-bottom: 3px solid var(--primary);
+        }
+        &.active {
+          border-bottom: 3px solid var(--primary);
         }
       }
     }

@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <>
       <Navbar />
       <HeaderMain />
-      {/* <SaintsCarousel /> */}
+      <SaintsCarousel />
     </>
   );
 };

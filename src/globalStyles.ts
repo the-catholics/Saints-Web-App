@@ -21,19 +21,20 @@ function lighter(color: string, percent: number) {
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --primary: #441e11;
-    --primary-hover: ${lighter("#441e11", 20)};
-    --secondary: #903f24;
-    --secondary-hover: ${lighter("#903f24", 20)};
-    --background: #fff8db;
-    --background-two: #fff8db;
-    --background-hover: #A4796A;
-    --background-ts: #A4796A99;
-    --text: #100603;
+    --primary: #4154f1;
+    --primary-hover: ${lighter("#4154f1", 20)};
+    --secondary: #306EDB;
+    --secondary-hover: ${lighter("#306EDB", 20)};
+    --background: #fafbff;
+    --background-two: #dbebfe;
+    --background-hover: #306EDB;
+    --background-ts: #fafbff99;
+    --background-two-ts: #dbebfe99;
+    --text: #012970;
     --text-alt: #fff;
     --ts: all 0.3s ease;
-    --bs: 0px 0px 25px #A4796A;
-    --br: 25px;
+    --bs: 0px 0px 25px #dbebfe;
+    --br: 8px;
   }
   body {
     background-color: var(--background);
@@ -61,6 +62,10 @@ const GlobalStyle = createGlobalStyle`
 
   main {
     margin-top: 100px;
+  }
+
+  img {
+    width: 100%;
   }
 
   .svg-inline--fa {

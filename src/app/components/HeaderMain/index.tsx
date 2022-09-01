@@ -15,7 +15,7 @@ const HeaderMain: React.FC = () => {
         </div>
         <div className="buttons">
           <Link to={"/getting-started"} className="button primary">
-            Começando
+            Iniciando
           </Link>
           <Link to={"/documentation"} className="button secondary">
             Documentação

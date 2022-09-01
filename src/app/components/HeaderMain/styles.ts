@@ -8,22 +8,18 @@ export const Main = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
-  /* background-color: var(--background); */
   border-radius: 0 0 var(--br) var(--br);
   box-shadow: var(--bs);
-  background: url(${menu});
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  /* background: url(${menu}); */
+  /* background-size: cover; */
+  /* background-position: right; */
+  /* background-repeat: no-repeat; */
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 `;
 
@@ -33,6 +29,9 @@ export const Content = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem 0;
+  width: fit-content;
+  padding: 20px 40px;
+  margin: 0 auto;
   img {
     width: 160px;
   }
@@ -47,12 +46,12 @@ export const Content = styled.div`
   }
 
 
+  background: var(--background-ts);
+  border-radius: var(--br);
   @media (max-width: 768px) {
-    background: var(--background-ts);
-    border-radius: var(--br);
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 450px) {
     .buttons {
       flex-direction: column;
     }
