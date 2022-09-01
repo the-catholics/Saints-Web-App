@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Icon from "../Icon";
 import { Navigation } from "./styles";
 
 const Navbar: React.FC = () => {
   document.addEventListener("scroll", scrollDocument);
+  const location = useLocation();
 
   function scrollDocument() {
     const navbar = document.getElementById("navbar");
@@ -21,15 +22,61 @@ const Navbar: React.FC = () => {
   return (
     <Navigation id="navbar" fixed="top" expand="lg">
       <Container>
-        <Navigation.Brand><Link to="/"><img src="/logo.svg" alt="igreja" /></Link></Navigation.Brand>
-        <Navigation.Toggle aria-controls="nav-navbar"> <Icon name="bars"/> </Navigation.Toggle>
+        <Navigation.Brand>
+          <Link to="/">
+            <img src="/logo.svg" alt="igreja" />
+          </Link>
+        </Navigation.Brand>
+        <Navigation.Toggle aria-controls="nav-navbar">
+          {" "}
+          <Icon name="bars" />{" "}
+        </Navigation.Toggle>
         <Navigation.Collapse id="nav-navbar">
           <Nav className="me-auto">
-            <Link className="nav-link" to="/">Início</Link>
-            <Link className="nav-link" to="/getting-started">Iniciando</Link>
-            <Link className="nav-link" to="/documentation">Documentação</Link>
-            <Link className="nav-link" to="/about">Sobre</Link>
-            <Link className="nav-link" to="/login">Entrar</Link>
+            <Link
+              className={
+                location.pathname === "/" ? "active nav-link" : "nav-link"
+              }
+              to="/"
+            >
+              Início
+            </Link>
+            <Link
+              className={
+                location.pathname === "/getting-started"
+                  ? "active nav-link"
+                  : "nav-link"
+              }
+              to="/getting-started"
+            >
+              Iniciando
+            </Link>
+            <Link
+              className={
+                location.pathname === "/documentation"
+                  ? "active nav-link"
+                  : "nav-link"
+              }
+              to="/documentation"
+            >
+              Documentação
+            </Link>
+            <Link
+              className={
+                location.pathname === "/about" ? "active nav-link" : "nav-link"
+              }
+              to="/about"
+            >
+              Sobre
+            </Link>
+            <Link
+              className={
+                location.pathname === "/login" ? "active nav-link" : "nav-link"
+              }
+              to="/login"
+            >
+              Entrar
+            </Link>
           </Nav>
         </Navigation.Collapse>
       </Container>
