@@ -1,0 +1,16 @@
+{
+  "Início": "Início",
+  "Iniciando": "Iniciando",
+  "Documentação": "Documentação",
+  "Sobre": "Sobre",
+  "Entrar": "Entrar",
+  "Faça muito": "Faça muito",
+  "Um API REST para Santos da Igreja Católica.": "Um API REST para Santos da Igreja Católica.",
+  "Com simples requisições GET você consegue tudo o que precisa.": "Com simples requisições <strong>GET</strong> você consegue tudo o que precisa.",
+  "E você não precisa de nenhum token de autorização.": "E você não precisa de nenhum token de autorização.",
+  "Listagem de todos os santos.": "Listagem de todos os santos.",
+  "Santo do dia.": "Santo do dia.",
+  "Citações de cada santo e suas obras.": "Citações de cada santo e suas obras.",
+  "Imagens de cada santo.": "Imagens de cada santo.",
+  "Todas as informações contidas são fornecidas por Bispos, Padres e Diáconos qualificados": "Todas as informações contidas são fornecidas por <strong>Bispos</strong>, <strong>Padres</strong> e <strong>Diáconos</strong> qualificados"
+}

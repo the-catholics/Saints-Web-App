@@ -1,33 +1,29 @@
-import React, { createContext, PropsWithChildren, useState } from "react";
-import { User } from "../../models/User";
-import { PropsUserContext } from "../../models/Context";
+import React, { createContext, PropsWithChildren, useMemo, useState } from 'react';
+import { PropsUserContext } from '../../models/Context';
 
-const DEFALT_VALUE = {
+const DEFAULT_VALUE = {
   state: {
     id: 0,
-    name: "",
-    email: "",
-    password: "",
-    created_at: "",
+    name: '',
+    email: '',
+    password: '',
+    created_at: '',
   },
   setState: () => {},
 };
 
-const UserContext = createContext<PropsUserContext>(DEFALT_VALUE);
+const UserContext = createContext<PropsUserContext>(DEFAULT_VALUE);
 
 const UserContextProvider: React.FC<PropsWithChildren> = ({ children }) => {
-  const [state, setState] = useState(DEFALT_VALUE.state);
-
-  return (
-    <UserContext.Provider
-      value={{
-        state,
-        setState,
-      }}
-    >
-      {children}
-    </UserContext.Provider>
+  const [state, setState] = useState(DEFAULT_VALUE.state);
+  const value = useMemo(
+    () => ({
+      state,
+      setState,
+    }),
+    [state]
   );
+  return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };
 
 export { UserContextProvider };

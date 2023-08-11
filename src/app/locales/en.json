@@ -1,0 +1,16 @@
+{
+  "Início": "Home",
+  "Iniciando": "Getting Started",
+  "Documentação": "Documentation",
+  "Sobre": "About",
+  "Entrar": "Log in",
+  "Faça muito": "Make a Lot",
+  "Um API REST para Santos da Igreja Católica.": "A REST API about Saints of the Catholic Church",
+  "Com simples requisições GET você consegue tudo o que precisa.": "With simple <strong>GET</strong> requests, you get everything you need.",
+  "E você não precisa de nenhum token de autorização.": "And you don't need any authorization token.",
+  "Listagem de todos os santos.": "List of all Saints.",
+  "Santo do dia.": "Saint of the Day",
+  "Citações de cada santo e suas obras.": "Quotes from each saint and their works.",
+  "Imagens de cada santo.": "Images of each saint.",
+  "Todas as informações contidas são fornecidas por Bispos, Padres e Diáconos qualificados": "All information is provided by qualified <strong>Bishops</strong>, <strong>Priests</strong>, and <strong>Deacons</strong>."
+}

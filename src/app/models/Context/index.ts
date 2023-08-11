@@ -1,5 +1,5 @@
-import React, { SetStateAction } from "react";
-import { User } from "../User";
+import React, { SetStateAction } from 'react';
+import { User } from '../User';
 
 export interface PropsUserContext {
   state: User;
