@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import { Container } from 'react-bootstrap';
 import { Content, Main } from './styles';
 import { makeid } from '../../utilities';
+import { i18n } from '../../locales';
 
 const SaintsCarousel: React.FC = () => {
   const breakpoints = {
@@ -28,62 +29,13 @@ const SaintsCarousel: React.FC = () => {
     },
   };
 
-  const saints = [
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-    {
-      name: 'São José',
-      image: 'http://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
-      description:
-        'Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.',
-    },
-  ];
+  const stJoseph = {
+    name: i18n`São José`,
+    image: 'https://www.rccbrasil.org.br/imagens/images/Espiritualidade/2017_03/20170302_saojose_04.jpg',
+    description: i18n`Segundo o Novo Testamento, o esposo da Virgem Maria e o pai putativo de Jesus. O nome José é a versão lusófona do hebraico Yosef, por meio do latim Iosephus.`,
+  };
+
+  const saints = [stJoseph, stJoseph, stJoseph, stJoseph, stJoseph, stJoseph, stJoseph, stJoseph];
 
   return (
     <Main>

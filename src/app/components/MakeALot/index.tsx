@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { CodeBlock, atomOneDark } from 'react-code-blocks';
-import Main from './styles';
+import { CodeBlock, dracula } from 'react-code-blocks';
+import Main, { CodeBlocks } from './styles';
 import { DangerousComponent, i18n } from '../../locales';
 
 const axios: string = `import axios from 'axios';
@@ -12,15 +12,6 @@ axios.get('https://api.saints.com.br/all-saints')
         saints.forEach(saint => console.log(saint.name));
     })
     .catch(console.error);`;
-
-const props = {
-  language: 'javascript',
-  showLineNumbers: true,
-  theme: atomOneDark,
-  text: axios,
-};
-// eslint-disable-next-line react/jsx-props-no-spreading
-const block = <CodeBlock {...props} />;
 
 export default () => (
   <Main>
@@ -45,7 +36,11 @@ export default () => (
           </p>
         </Col>
         <Col sm="12" lg="6">
-          {block}
+          <CodeBlocks />
+          <span className="blocks">
+            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+            <CodeBlock {...{ text: axios }} language="javascript" showLineNumbers theme={dracula} />
+          </span>
         </Col>
       </Row>
     </Container>
