@@ -1,21 +1,21 @@
-import { Navbar } from "react-bootstrap";
-import styled from "styled-components";
+import { Navbar } from 'react-bootstrap';
+import styled from 'styled-components';
 
-export const Navigation = styled(Navbar)`
+export default styled(Navbar)`
   background-color: var(--background-ts);
   padding: 16px 0;
   transition: var(--ts);
-  
+
   &.scrolled {
     padding: 8px 0;
   }
-  
+
   .navbar-brand {
     img {
       width: 40px;
     }
   }
-  
+
   .navbar-toggler {
     transform: rotate(-90deg);
     transition: var(--ts);

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router-dom';
-import Home from '../containers/Home'
-import About from '../containers/About'
-import NotFound from '../containers/NotFound'
+import Home from '../containers/Home';
+import About from '../containers/About';
+import NotFound from '../containers/NotFound';
 
 const Routes: React.FC = () => (
   <Router>

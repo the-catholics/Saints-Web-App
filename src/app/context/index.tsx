@@ -1,9 +1,9 @@
-import React, {PropsWithChildren} from "react";
+import React, { PropsWithChildren } from 'react';
 
-import {UserContextProvider} from "./user";
+import { UserContextProvider } from './user';
 
-const GlobalContext: React.FC<PropsWithChildren> = ({children}) => {
-  return <UserContextProvider>{children}</UserContextProvider>;
-};
+const GlobalContext: React.FC<PropsWithChildren> = ({ children }) => (
+  <UserContextProvider>{children}</UserContextProvider>
+);
 
 export default GlobalContext;

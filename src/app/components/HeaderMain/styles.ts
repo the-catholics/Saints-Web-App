@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import menu from "../../../assets/images/main.png";
+import styled from 'styled-components';
+import menu from '../../../assets/images/main.png';
 
 export const Main = styled.div`
   height: 100vh;
@@ -44,7 +44,6 @@ export const Content = styled.div`
   .buttons {
     margin-top: 2rem;
   }
-
 
   background: var(--background-ts);
   border-radius: var(--br);
